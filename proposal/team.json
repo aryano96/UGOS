@@ -1,0 +1,10 @@
+{
+  "_note": "Fill in before the final build. Leave a value empty to print a blank line in the PDF. The declaration wording is a draft: no official template was published, so confirm it with UGREEN or adjust it.",
+  "team_name": "",
+  "representative": "",
+  "members": [
+    { "name": "", "location": "", "signature": "", "date": "" },
+    { "name": "", "location": "", "signature": "", "date": "" }
+  ],
+  "declaration": "We, the team members named below, each contributed to this Project, consent to its submission to the UGREEN Hackathon 2026 on AI NAS, have read and agree to the Official Rules, and authorise the Representative named below to act and submit on our behalf."
+}
