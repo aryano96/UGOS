@@ -4,15 +4,16 @@ A Skill for UGREEN AI NAS (Uliya), built for the UGREEN Hackathon 2026 on AI NAS
 
 It reads one project folder on the NAS and lists every commitment made out loud (in call recordings or meeting notes) next to what the signed paperwork says: **confirmed**, **contradicts**, **not in writing** or **unclear**, with the exact quote and its source on both sides.
 
-**Status:** Round 1 package built and statically checked. Nothing has been run on a NAS; that is only possible on a Finalist testing day.
+**Status:** Round 1 submitted (frozen copy in `round1-submitted/`). The working version in `said-vs-signed/` is 0.2.0, refined for Round 2. Nothing has been run on a NAS; that is only possible on a Finalist testing day.
 
 ## What is in this repository
 
 | Path | Purpose | Submitted? |
 |---|---|---|
-| `said-vs-signed/` | The Skill package: `SKILL.md` and five reference files | Yes, as the ZIP |
-| `dist/said-vs-signed.zip` | Built ZIP of the package | **Yes** |
-| `dist/Said-vs-Signed-Proposal-DRAFT.pdf` | Proposal PDF, draft until team details are filled in | Yes, once final |
+| `round1-submitted/` | Exact Round 1 files with checksums. Never edit. | Submitted in Round 1 |
+| `said-vs-signed/` | The Skill package (working version 0.2.0) | Round 2, as the ZIP |
+| `dist/said-vs-signed.zip` | Built ZIP of the working version | Round 2 |
+| `dist/Said-vs-Signed-Proposal.pdf` | Proposal PDF (same text as Round 1) | No (already submitted) |
 | `proposal/` | Proposal source text and team details | No (source for the PDF) |
 | `test-corpus/harbor-cafe/` | Fictional test set and answer key | No |
 | `round2/` | Testing-day runbook and demo storyboard | No |

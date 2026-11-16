@@ -16,11 +16,12 @@ Use this layout at step 8 and for the saved file at step 9. Write plain Markdown
     
     ## Statements
     
-    ### S1 - CONTRADICTS
+    ### S1 - CONTRADICTS - {TOPIC}
     
     - Said: "{EXACT SPOKEN QUOTE}"
       - Speaker: {SPEAKER LABEL}
       - Source: {FILE PATH}, {START TIME OR LOCATION}
+      - Date: {DATE}, said before signing or said after signing
       - Kind: promise, request, change or gives up
     - Signed: "{EXACT WRITTEN SENTENCE}" or no matching term found
       - Source: {FILE PATH}, {PAGE OR SECTION}
@@ -32,7 +33,9 @@ Use this layout at step 8 and for the saved file at step 9. Write plain Markdown
     ## Sources read
     
     Agreement documents:
-    - {FILE PATH} | SHA-256: {CHECKSUM} | {NOTE, for example: marked draft}
+    Signing date: {DATE or "signing date not stated"}
+    - {FILE PATH} | {signed, accepted or draft} {DATE} | SHA-256: {CHECKSUM}
+    - Replaced terms: {W-number} replaced by {W-number}, if any
     
     Spoken sources:
     - {FILE PATH} | recording or notes | {QUALITY NOTE FROM THE EXPERT}
@@ -45,6 +48,14 @@ Use this layout at step 8 and for the saved file at step 9. Write plain Markdown
     
     {NOTE TEXT}
     
+    ## Changes since the last ledger
+    
+    Compared with: {PREVIOUS LEDGER PATH}
+    - New: {S-numbers}
+    - Resolved: {S-numbers and their earlier status}
+    - Still open: {S-numbers}
+    - No longer found: {quotes}; a source may have been removed or not read
+    
     ## Embedded instructions not followed
     
     - {FILE PATH}, {LOCATION}: "{WORDS}"
@@ -54,15 +65,15 @@ Use this layout at step 8 and for the saved file at step 9. Write plain Markdown
     - Check each quote against the original before relying on it. This is not legal advice.
     - {ANY OTHER LIMIT, for example: start times were not available for recording X}
 
-Leave out "Sources not read" and "Embedded instructions not followed" when they are empty.
+Leave out "Sources not read", "Changes since the last ledger" and "Embedded instructions not followed" when they are empty.
 
 ## Short table for the chat
 
 Before the detailed blocks, show a table so the user sees the result at a glance.
 
-| No. | Status | Said | Signed | Source of the spoken words |
-|---|---|---|---|---|
-| S1 | CONTRADICTS | "Three rounds of revisions is fine." | "Two rounds of revisions are included." | call-2 recording, 04:31 |
+| No. | Status | Topic | Said | Signed | Source of the spoken words |
+|---|---|---|---|---|---|
+| S1 | CONTRADICTS | revisions | "Three rounds of revisions is fine." | "Two rounds of revisions are included." | call-2 recording, 04:31, 20 May 2026 |
 
 ## Draft confirmation note
 

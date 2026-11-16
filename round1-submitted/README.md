@@ -9,4 +9,4 @@ These are the exact files prepared for the Round 1 Devpost submission on 15 Nove
 | `proposal-source.md` | Source text of the proposal |
 | `SHA256SUMS` | Checksums of the three files above |
 
-The same state is tagged in git as `round1-submission`. Later work on the Skill (Round 2) lives in `said-vs-signed/` and `dist/`.
+The same state is commit `5e540a4` (tagged `round1-submission` in the local clone). Later work on the Skill (Round 2) lives in `said-vs-signed/` and `dist/`.

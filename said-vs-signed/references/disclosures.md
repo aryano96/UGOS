@@ -18,6 +18,7 @@ All of the following was newly written during the Hackathon period. No earlier S
 - The draft confirmation note.
 - The practice run with fictional sample files and an expected ledger.
 - The handling of embedded instructions, partial results and repeat runs.
+- Date and precedence rules (signing date, later documents governing, before and after signing), topics, the final quote check, batching, and the comparison with the previous ledger (version 0.2.0, after Round 1).
 
 ## AI tools used and their principal uses
 

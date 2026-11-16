@@ -39,7 +39,7 @@ Input: the practice set (agreement plus meeting notes, no audio), created throug
 Expected:
 
 - The first run matches the expected ledger in [practice-run.md](practice-run.md).
-- The second run leaves the first ledger out of the evidence, produces the same statuses, and saves a second ledger file without overwriting the first.
+- The second run leaves the first ledger out of the evidence, produces the same statuses, shows "Changes since the last ledger" with S1, S2 and S3 still open and nothing resolved, and saves a second ledger file without overwriting the first.
 
 ## Edge case: unreadable recording and an embedded instruction
 
@@ -60,11 +60,18 @@ Expected:
 
 ## Setup, removal and versions
 
-- **Version**: 0.1.0, the Round 1 initial package. Later versions will be listed here with what changed.
+- **Version**: 0.2.0. See the version history below.
 - **Dependencies**: none beyond the three registered experts on the NAS. The package needs no configuration, account or key.
 - **Setup**: install the package as provided by the platform, then name a project folder, or ask for a practice run.
 - **What the Skill leaves on the NAS**: one ledger file per run that the user approved, and the practice folder with two fictional files if a practice run was approved. It keeps no other state.
 - **Removal**: uninstalling the Skill needs no clean-up. The ledger files and the practice folder are ordinary files the user can keep or delete.
+
+## Version history
+
+| Version | Changes |
+|---|---|
+| 0.1.0 | Round 1 initial package: nine-step workflow, four statuses, verification pass, practice run. |
+| 0.2.0 | Dates on both sides: signing date, later signed documents govern earlier ones, "said before signing" and "said after signing" notes. A topic on every term and statement so like is compared with like. A final quote check before the ledger is shown. Verification in batches of at most 10 statements and notes in groups of at most 5 files, to keep each delegation small. Step 10: on a repeat run, a "Changes since the last ledger" section (new, resolved, still open, no longer found). |
 
 ## Known unknowns
 
@@ -74,4 +81,5 @@ These depend on device behaviour that the public catalog does not describe.
 2. Which audio and video formats, and what length of recording, transcription accepts.
 3. Which document formats the document expert reads.
 4. How the save step names the file and what it does when the name is taken.
-5. Whether the document or transcription experts send content to a cloud AI service. The Skill itself calls no outside service, but it makes no claim that processing is fully local.
+5. How long a delegation instruction can be. Batching keeps each one small; if long instructions are still cut off, reduce the batch size.
+6. Whether the document or transcription experts send content to a cloud AI service. The Skill itself calls no outside service, but it makes no claim that processing is fully local.
