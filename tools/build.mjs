@@ -204,7 +204,7 @@ record("proposal", "ten answers total <= 500 words", answerWords <= LIMITS.propo
   `${answerWords} words in answers (${answerWords + headingWords} if the question headings are also counted)`);
 
 const team = JSON.parse(fs.readFileSync(teamJson, "utf8"));
-const teamComplete = Boolean(team.representative) && team.members.length > 0 && team.members.every((member) => member.name && member.signature);
+const teamComplete = !proposalSource.includes("{{TEAM_BLOCK}}") || Boolean(team.representative) && team.members.length > 0 && team.members.every((member) => member.name && member.signature);
 const esc = (value) => String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const blank = (value, width = 46) => value ? esc(value) : `<span class="blank" style="width:${width}mm"></span>`;
 const teamBlock = `

@@ -23,7 +23,7 @@ All of the following was newly written during the Hackathon period. No earlier S
 
 | Tool | Principal uses |
 |---|---|
-| Claude Code (Anthropic) | Reading the Hackathon rules and the official tool; research on existing products; developing the concept with the team; drafting the files in this package; running the static checker; a first draft of the proposal for the team to rewrite in its own words. |
+| Claude Code (Anthropic) | Reading the Hackathon rules and the official tool; research on existing products; developing the concept with the team; drafting the files in this package; running the static checker; drafting the proposal text, which the team reviewed. |
 | ChatGPT (OpenAI) | Used by the team to explore an alternative concept that was not adopted. No content from it is in this package. |
 
 ## External services and data flows
